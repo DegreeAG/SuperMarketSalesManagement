@@ -2,6 +2,7 @@ package LogicHandle;
 
 import Entity.Item;
 import Entity.SalesStaff;
+import Entity.SellingItems;
 import Entity.SellingItemsDetails;
 
 import java.util.Scanner;
@@ -99,5 +100,14 @@ public class SaleLogicHandle {
             }
             return salesStaff;
         }
+
+    public void printSellingItems() {
+        for (int i = 0; i < saleLogicHandles.length; i++) {
+            if (saleLogicHandles[i] == null) {
+                continue;
+            }
+            System.out.println(saleLogicHandles[i]);
+        }
+    }
     }
 

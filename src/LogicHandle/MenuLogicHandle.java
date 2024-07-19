@@ -32,7 +32,7 @@ public class MenuLogicHandle {
                     saleLogicHandle.createSellingList();
                   break;
               case 6:
-                  System.out.println("Chwcs năng 6");
+                  saleLogicHandle.printSellingItems();
                   break;
               case 7:
                   System.out.println("Chwcs năng 7");
