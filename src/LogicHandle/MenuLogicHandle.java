@@ -9,7 +9,7 @@ public class MenuLogicHandle {
 
     private final ItemsLogicHandle itemsLogicHandle = new ItemsLogicHandle();
     private final SalesStaffLogicHandle salesStaffLogicHandle = new SalesStaffLogicHandle();
-    private static final SaleLogicHandle saleLogicHandle = new SaleLogicHandle();
+    private final SaleLogicHandle saleLogicHandle = new SaleLogicHandle(salesStaffLogicHandle, itemsLogicHandle);
 
     public void menu() {
       while (true) {
@@ -29,7 +29,7 @@ public class MenuLogicHandle {
                   salesStaffLogicHandle.printSalesStaff();
                   break;
               case 5:
-                    saleLogicHandle.
+                    saleLogicHandle.createSellingList();
                   break;
               case 6:
                   System.out.println("Chwcs năng 6");
